@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 10px 0;
+  background-color: rgb(240, 255, 255);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.color-primary {
+  color: rgb(212 116 212);
+}
+
+.background-notification {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container-close {
+  max-height: 20px;
+  max-width: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.container-wpp {
+  background-color: rgb(28, 182, 28);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.app__loocked_screen {
+  width: 23%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.4)), url(./../img/lockedBackground.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.header__container-icons::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  width: 48px;
+  height: 2px;
+  background-color: #ffffff54;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+}
+
+.header__container-icons i {
+  font-size: 12px;
+}
+
+.app__loocked_screen_footer-container::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 20px;
+  bottom: 8px;
+}
+
+.app__loocked_screen_footer-icons {
+  background-color: rgb(16 16 16);
+    max-height: 30px;
+    max-width: 30px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 1.3em;
+}
