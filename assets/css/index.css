@@ -34,14 +34,15 @@ body {
 .app__loocked_screen {
   width: 23%;
   height: 100%;
-  background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.4)), url(./../img/lockedBackground.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
+    url(./../img/lockedBackground.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 30px;
 }
 
 .header__container-icons::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   width: 48px;
@@ -58,7 +59,7 @@ body {
 }
 
 .app__loocked_screen_footer-container::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100px;
   height: 3px;
@@ -69,10 +70,31 @@ body {
 
 .app__loocked_screen_footer-icons {
   background-color: rgb(16 16 16);
-    max-height: 30px;
-    max-width: 30px;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    padding: 1.3em;
+  max-height: 30px;
+  max-width: 30px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 1.3em;
+}
+
+@media (max-width: 800px) {
+  .app {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app__loocked_screen {
+    width: 40%;
+  }
+
+  .app > div {
+    margin: 0 0 20px 0 !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .app__loocked_screen {
+    width: 80%;
+  }
 }
